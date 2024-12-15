@@ -6,6 +6,8 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
+    list-style-type: none;
     border: none;
     outline: none;
     scroll-behavior: smooth;
@@ -46,6 +48,14 @@ body {
     background: transparent;
     color: var(--main-color);
     border: 0.2rem solid var(--main-color);
+}
+span {
+    color: var(--main-color);
+}
+.heading {
+    font-size: 4.3rem;
+    text-align: left;
+    
 }
 /* ------------  header ------------------ */
 .header {
@@ -97,7 +107,14 @@ body {
 .header.sticky .navbar a.active {
     color: var(--main-color);
 }
-
+.header.sticky .navbar a.active::before {
+    background: var(--main-color);
+    opacity: 0.4;
+}
+.header.sticky #darkMode-icon {
+    color: var(--text-color);
+    opacity: 0.7;
+} 
 /* Dark mode  */
 #darkMode-icon {
     font-size: 2.4rem;
@@ -106,6 +123,7 @@ body {
 
 }
 /* =================== home section === */
+/* >>>>>>>>>>>> Global Section property >>>>>>>>>>>> */
 section {
     min-height: 100vh;
     padding: 10rem 7% 2rem;
@@ -289,9 +307,7 @@ section {
 
 /* ============= about section ================= */
 
-.about-content span {
-    color: var(--main-color);
-}
+
 
 .about {
     display: flex;
@@ -311,11 +327,7 @@ section {
     right:0;
     width: 768px;
 }
-.about-content .heading {
-    font-size: 4.3rem;
-    text-align: left;
-    
-}
+
 .about-content  h3 {
     font-size: 2rem;
     text-align: left;
@@ -364,3 +376,5 @@ section {
     padding: 0.2rem 0.5rem;
     pointer-events: none;
 }
+
+/* ================== service */
