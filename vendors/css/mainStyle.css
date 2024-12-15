@@ -282,14 +282,19 @@ section {
     justify-content: center;
     align-items: center;
     gap: 4rem;
+  
 }
 .about .about-img {
     width: 40vw;
 }
-about .about-img img {
+.about .about-img img {
     width: 100%;
 }
-
+/* about content */
+.about .about-content{
+    right:0;
+    width: 768px;
+}
 .about-content .heading {
     font-size: 4.3rem;
     text-align: left;
@@ -302,6 +307,30 @@ about .about-img img {
 }
 
 .about-content p {
-    font-size: 1.2rem;
-    margin: 0.2rem 0 0.3rem;
+    font-size: 1.5rem;
+    margin: 2rem 0 3rem;
+    justify-content: center;
+}
+/* interest icons */
+.about .interest-box{
+    width: 100%;
+    background: yellowgreen;
+}
+.about .interest-box .header{ 
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.about .interest-box .interest-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.about .interest-box .interest {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3rem 3%;
 }
