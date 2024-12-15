@@ -378,6 +378,9 @@ section {
 }
 
 /* ================== service==== */
+ h2 .heading .shadow-heading {
+    box-shadow: 0 0.2rem 0.2rem var(--shadow-color);
+}
 .topAnalyst {
     width: 100%;
     /* background:yellowgreen; */
@@ -386,7 +389,7 @@ section {
     justify-content: end;
     align-items: center;
     padding: 0 7%;
-    box-shadow: 0 0.2rem 0.2rem var(--shadow-color);
+    margin: 3rem 0;
     position: relative;
 }
 .topAnalyst .topAnalyst-content {
@@ -415,7 +418,7 @@ section {
 }
 .topAnalyst-content li p{
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 2.5rem;
     color: var(--text-color);
 }
@@ -430,4 +433,29 @@ section {
 .topAnalyst-content li p:nth-child(3) {
     font-size: 1.5rem;
     font-weight: 400;
+}
+/*  ====== service content -=== */
+.services .service-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* background: red; */
+    padding: 0.2rem;
+}
+.service-container .service-box {
+    flex: 1 2 30rem;
+    background: var(--bg-color);
+    padding: 2rem 3rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 .1rem 6rem var(--shadow-color);
+    border-top: .6rem solid var(--main-color);
+    border-bottom: 0.6rem solid var(--main-color);
+    
+}
+.service-container .service-box i {
+    font-size: 6rem;
+    color: var(--main-color);
 }
