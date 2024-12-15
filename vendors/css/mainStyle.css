@@ -157,7 +157,7 @@ section {
     width: 768px;
     height: 768px;
     overflow: hidden;
-    background-color: red;
+    /* background-color: red; */
 }
 .home .professional-container .profession-box {
     position: absolute;
@@ -166,7 +166,7 @@ section {
     width: 768px;
     height: 768px;
     /* overflow: hidden; */
-    background: yellowgreen;
+    /* background: yellowgreen; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -181,6 +181,7 @@ section {
     color: var(--main-color);
     transform: rotate(calc(360deg /5 * var(--i)));
     transform-origin: 384px;
+    background: red;
 }
 .home .profession-box .profession  i {
     font-size: 3.8rem;
@@ -189,4 +190,12 @@ section {
     font-size: 3.1rem;
     line-height: 1;
     font-weight: 600;
+}
+/* ---- circle over the professional box */
+.home .profession-box .circle {
+    width:560px ;
+    height: 560px;
+    border: 0.3rem solid var(--main-color);
+    border-radius: 50%;
+
 }
