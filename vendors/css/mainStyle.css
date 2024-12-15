@@ -55,6 +55,8 @@ body {
     color: var(--white-color);
     font-weight: 500;
     margin-right: 3.5rem;
+    color: var(--text-color);
+    font-weight: 600;
 }
 .navbar a.active::before {
     content: '';
@@ -148,14 +150,14 @@ section {
     border: 0.2rem solid var(--main-color);
 }
 
-/* --- professionl box */
+/* --- ============professionl box */
 .home .professional-container {
     position: absolute;
     top: 50%;
     right: 0;
     transform: translateY(-50%);
-    width: 768px;
-    height: 768px;
+    width: 786px;
+    height: 786px;
     overflow: hidden;
     /* background-color: red; */
 }
@@ -231,10 +233,23 @@ section {
     position: absolute;
     top: 0;
     right: 0;
+    bottom: 0;
     width: 0;
     height: 0;
     border-top: 384px solid var(--main-color);
     border-right: 384px solid var(--main-color);
     border-bottom: 384px solid var(--main-color);
     border-left: 384px solid transparent;
+}
+.home .home-img {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+    display: flex;
+    justify-content: end;
+}
+.home .home-img img {
+    height: 700px;
 }
