@@ -226,3 +226,16 @@ section {
     border: 0.3rem solid var(--main-color);
     border-radius: 50%;
 }
+/* ------------overlay on profesional box -------- */
+.home .professional-container .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 384px solid var(--main-color);
+    border-right: 384px solid var(--main-color);
+    border-bottom: 384px solid var(--main-color);
+    border-left: 384px solid transparent;
+
+}
