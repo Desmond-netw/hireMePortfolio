@@ -182,3 +182,6 @@ section {
     transform: rotate(calc(360deg /5 * var(--i)));
     transform-origin: 384px;
 }
+.home .profession-box .profession  i {
+    font-size: 3.8rem;
+}
