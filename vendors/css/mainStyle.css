@@ -185,3 +185,8 @@ section {
 .home .profession-box .profession  i {
     font-size: 3.8rem;
 }
+.home .profession-box .profession h3 {
+    font-size: 3.1rem;
+    line-height: 1;
+    font-weight: 600;
+}
