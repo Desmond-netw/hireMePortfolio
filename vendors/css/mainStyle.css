@@ -57,6 +57,23 @@ span {
     text-align: left;
     
 }
+.smlBtn {
+    display: inline-block;
+    padding: 1rem 1.5rem;
+    background: var(--main-color);
+    color: var(--white-color);
+    border: 0.2rem solid var(--main-color);
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    transition: 0.3s ease-in-out;
+}
+.smlBtn:hover {
+    background: transparent;
+    color: var(--main-color);
+    border: 0.2rem solid var(--main-color);
+}
 /* ------------  header ------------------ */
 .header {
     position: fixed;
@@ -377,8 +394,14 @@ section {
     pointer-events: none;
 }
 
-/* ================== service==== */
+/* ================== service ======== */
+.service {
+    min-height: auto;
+    margin-bottom: 6rem 7rem;
+}
+.service .heading {
 
+}
 
 .topAnalyst {
     width: 100%;
@@ -398,6 +421,7 @@ section {
 .topAnalyst-content li{
     color: var(--text-color);
     display: flex;
+    flex: 1 0 30rem;
     align-items: center;
     flex-direction: row;
     padding: 0.1rem 0;
@@ -450,12 +474,19 @@ section {
     padding: 2rem 3rem 4rem;
     border-radius: 2rem;
     text-align: center;
-    box-shadow: 0 .1rem 6rem var(--shadow-color);
-    border-top: .6rem solid var(--main-color);
-    border-bottom: 0.6rem solid var(--main-color);
+    box-shadow: 0 .1rem 2.5rem var(--shadow-color);
+    border-top: .1rem solid var(--main-color);
+    border-bottom: 0.4rem solid var(--main-color);
     
 }
 .service-container .service-box i {
     font-size: 6rem;
     color: var(--main-color);
+}
+.service-container .service-box h3 {
+    font-size: 3rem;
+}
+.service-container .service-box p {
+    font-size: 1.6rem;
+    margin: 1.6rem 0 3rem;
 }
