@@ -378,9 +378,8 @@ section {
 }
 
 /* ================== service==== */
- h2 .heading .shadow-heading {
-    box-shadow: 0 0.2rem 0.2rem var(--shadow-color);
-}
+
+
 .topAnalyst {
     width: 100%;
     /* background:yellowgreen; */
@@ -391,6 +390,7 @@ section {
     padding: 0 7%;
     margin: 3rem 0;
     position: relative;
+    box-shadow: 0.1rem solid var(--bg-color);
 }
 .topAnalyst .topAnalyst-content {
     width: 50%;
