@@ -468,6 +468,7 @@ section {
     /* background: red; */
     padding: 0.2rem;
 }
+
 .service-container .service-box {
     flex: 1 2 30rem;
     background: var(--bg-color);
@@ -477,7 +478,12 @@ section {
     box-shadow: 0 .1rem 2.5rem var(--shadow-color);
     border-top: .1rem solid var(--main-color);
     border-bottom: 0.4rem solid var(--main-color);
+    transition: 0.5s ease;
     
+}
+.service-container .service-box:hover {
+    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    transform: scale(1.02);
 }
 .service-container .service-box i {
     font-size: 6rem;
@@ -485,6 +491,10 @@ section {
 }
 .service-container .service-box h3 {
     font-size: 3rem;
+    transition: 0.3s ease-in-out;
+}
+.service-container .service-box h3:hover {
+    color: var(--main-color);
 }
 .service-container .service-box p {
     font-size: 1.6rem;
