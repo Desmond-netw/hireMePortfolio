@@ -176,12 +176,13 @@ section {
     position: absolute;
     left: 0;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-direction: column;
     color: var(--main-color);
     transform: rotate(calc(360deg /5 * var(--i)));
     transform-origin: 384px;
-    background: red;
+    background:var(--bg-color);
+    padding: 13px 0;
 }
 .home .profession-box .profession  i {
     font-size: 3.8rem;
@@ -197,5 +198,4 @@ section {
     height: 560px;
     border: 0.3rem solid var(--main-color);
     border-radius: 50%;
-
 }
