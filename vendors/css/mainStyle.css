@@ -58,6 +58,11 @@ body {
     display: flex;
     align-items: center;
     z-index: 100;
+    transition: 0.3s ease-in-out;
+}
+.header.sticky {
+    background: var(--bg-color);
+    box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
 }
 .logo {
     font-size: 2.5rem;
@@ -70,10 +75,9 @@ body {
 .navbar a {
     position: relative;
     font-size: 1.7rem;
-    color: var(--white-color);
     font-weight: 500;
     margin-right: 3.5rem;
-    color: var(--text-color);
+    color: var(--white-color);
     font-weight: 600;
 }
 .navbar a.active::before {
@@ -86,6 +90,14 @@ body {
     background-color: var(--white-color);
 
 }
+/* >>>>> sticky bar */
+.header.sticky .navbar a {
+    color: var(--text-color)
+}
+.header.sticky .navbar a.active {
+    color: var(--main-color);
+}
+
 /* Dark mode  */
 #darkMode-icon {
     font-size: 2.4rem;
@@ -285,7 +297,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 5rem;
   
 }
 .about .about-img {
