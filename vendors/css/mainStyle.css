@@ -317,15 +317,11 @@ section {
     pointer-events: none;
 }
 .home .home-img img {
-    height: 700px;
+    height: 600px;
     pointer-events: none;
-    
 }
 
-/* ============= about section ================= */
-
-
-
+/* ========= about section ===========*/
 .about {
     display: flex;
     justify-content: center;
@@ -356,7 +352,7 @@ section {
     margin: 2rem 0 3rem;
     justify-content: center;
 }
-/* interest icons */
+/* ----------- my interest icons */
 .about .interest-box{
     width: 100%;
     margin-bottom: 1rem;
