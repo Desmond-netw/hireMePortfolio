@@ -395,9 +395,7 @@ section {
     min-height: auto;
     margin-bottom: 6rem 7rem;
 }
-.service .heading {
 
-}
 
 .topAnalyst {
     width: 100%;
@@ -495,4 +493,26 @@ section {
 .service-container .service-box p {
     font-size: 1.6rem;
     margin: 1.6rem 0 3rem;
+}
+
+/* ============= Portfolio =============== */
+
+.portfolio {
+    min-height: auto;
+    padding-bottom: 10rem ;
+}
+.portfolio h2 {
+    margin-bottom: 2rem;
+
+}
+
+.portfolio .portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.4rem;
+}
+.portfolio-container .portfolio-box img {
+    width: 350px;
+    
 }
