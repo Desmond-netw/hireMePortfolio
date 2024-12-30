@@ -537,6 +537,7 @@ section {
     border-radius: 2rem;
     box-shadow: 0 0 1 rgba(0,0,0,0.1);
     overflow: hidden;
+    margin-bottom: 2rem;
 }
 .portfolio-container .portfolio-box  .portfolio-layer {
     position: absolute;
@@ -544,11 +545,17 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0,0,0,0.1), var(--main-color));
+    background: linear-gradient(rgba(0,0,0,0.3), var(--main-color));
     color: var(--white-color);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 0 4rem;
 }
+.portfolio-container .portfolio-box .portfolio-layer h4 {
+    font-size: 3rem;
+    font-weight: 600 ;
+}
+/* -- hove effect-- */
