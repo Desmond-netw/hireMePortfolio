@@ -6,6 +6,9 @@
     <title>hireDesmond</title>
     <!--  boxicons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- links & style css -->
      <link rel="stylesheet" href="vendors/css/mainStyle.css">
 </head>
@@ -198,37 +201,49 @@
         <h2 class="heading">Latest <span>Projects</span></h2>
 
         <div class="portfolio-container">
-            <div class="portfolio-box">
-                <img src="vendors/image/portfolio-img1.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Online Utensile Store</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aut modi molestiae sequi officiis similique unde quaerat! Neque odit aliquid dolor aspernatur? Blanditiis molestiae aliquam sapiente </p>
-                    <a href=""><i class='bx bx-link-external' ></i></a>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h4>Scroll My Big projects</h4>
+                    <!-- >>>>>>>>>>>>>>>>>>>>> -->
+                    <div class="portfolio-box">
+                        <img src="vendors/image/portfolio-img1.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Online Utensile Store</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aut modi molestiae sequi officiis similique unde quaerat! Neque odit aliquid dolor aspernatur? Blanditiis molestiae aliquam sapiente </p>
+                            <a href=""><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="vendors/image/portfolio-img2.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Online Utensile Store</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aut modi molestiae sequi officiis similique unde quaerat! Neque odit aliquid dolor aspernatur? Blanditiis molestiae aliquam sapiente </p>
+                            <a href=""><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="vendors/image/portfolio-img3.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Online Utensile Store</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aut modi molestiae sequi officiis similique unde quaerat! Neque odit aliquid dolor aspernatur? Blanditiis molestiae aliquam sapiente </p>
+                            <a href=""><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+                    <div class="portfolio-box">
+                        <img src="vendors/image/portfolio-img4.png" alt="">
+                        <div class="portfolio-layer">
+                            <h4>Online Utensile Store</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aut modi molestiae sequi officiis similique unde quaerat! Neque odit aliquid dolor aspernatur? Blanditiis molestiae aliquam sapiente </p>
+                            <a href=""><i class='bx bx-link-external' ></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- <<<<<<<<<<<<<<<<<<<<<<<< -->
                 </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="vendors/image/portfolio-img2.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Online Utensile Store</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aut modi molestiae sequi officiis similique unde quaerat! Neque odit aliquid dolor aspernatur? Blanditiis molestiae aliquam sapiente </p>
-                    <a href=""><i class='bx bx-link-external' ></i></a>
                 </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="vendors/image/portfolio-img3.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Online Utensile Store</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aut modi molestiae sequi officiis similique unde quaerat! Neque odit aliquid dolor aspernatur? Blanditiis molestiae aliquam sapiente </p>
-                    <a href=""><i class='bx bx-link-external' ></i></a>
-                </div>
-            </div>
-            <div class="portfolio-box">
-                <img src="vendors/image/portfolio-img4.png" alt="">
-                <div class="portfolio-layer">
-                    <h4>Online Utensile Store</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore aut modi molestiae sequi officiis similique unde quaerat! Neque odit aliquid dolor aspernatur? Blanditiis molestiae aliquam sapiente </p>
-                    <a href=""><i class='bx bx-link-external' ></i></a>
-                </div>
+                <div class="swiper-scrollbar"></div>
             </div>
         </div>
        </section>
@@ -238,6 +253,20 @@
 
     <!-- box icons script -->
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <!-- swipper slider js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+       <!-- ===== swipper initializer -->
+       <script>
+        var swiper = new Swiper(".mySwiper", {
+          direction: "vertical",
+          slidesPerView: "auto",
+          freeMode: true,
+          scrollbar: {
+            el: ".swiper-scrollbar",
+          },
+          mousewheel: true,
+        });
+      </script>
     <!-- main script -->
      <script src="vendors/js/script.js"></script>
 </body>
