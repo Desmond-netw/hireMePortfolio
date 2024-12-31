@@ -589,3 +589,19 @@ section {
 .portfolio-container .portfolio-box:hover .portfolio-layer {
     opacity: 1.1;
 }
+
+/* ================= Testimonial css ======== */
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 5rem 1rem;
+}
+.testimonial-container .testimonial-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 90rem;
+    padding: 5rem;
+
+}
