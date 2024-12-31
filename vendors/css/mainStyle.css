@@ -603,5 +603,31 @@ section {
     width: 100%;
     max-width: 90rem;
     padding: 5rem;
+}
 
+.testimonial-wrapper .testimonial-content .testimonial-slide {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 2rem;
+    background: 0 0.1rem 5rem var(--shadow-color);
+    padding: 3rem 5rem;
+    border-top: 0.5rem solid var(--main-color);
+    border-bottom: 0.5rem solid var(--main-color);
+}
+.testimonial-wrapper .testimonial-content .testimonial-slide  img {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.5rem solid var(--bg-color);
+    outline: 0.5rem solid var(--main-color);
+}
+.testimonial-wrapper .testimonial-content .testimonial-slide h3 {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+}
+.testimonial-wrapper .testimonial-content .testimonial-slide p {
+    font-size: 1.5rem;
+    text-align: center;
 }
