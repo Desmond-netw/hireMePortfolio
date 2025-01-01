@@ -620,7 +620,7 @@ section {
     align-items: center;
     flex-direction: column;
     border-radius: 2rem;
-    box-shadow: 0 0.1rem 2rem var(--shadow-color);
+    box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
     padding: 3rem 5rem;
     border-top: 0.5rem solid var(--main-color);
     border-bottom: 0.5rem solid var(--main-color);
@@ -663,7 +663,7 @@ section {
     background-color: #ccc;
     text-align: center;
     margin: 1rem auto;
-    padding: 1rem;
+    padding: .5rem;
 }
 .contact form .input-box {
     display: flex;
@@ -673,5 +673,16 @@ section {
     background:yellowgreen;
 }
 .contact form .submit-box {
-    
+
+}
+.contact form .input-box input, 
+.contact form textarea {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+    width: 100%;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: 0.8rem;
+    margin: 0.7rem 0;
+    box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
 }
