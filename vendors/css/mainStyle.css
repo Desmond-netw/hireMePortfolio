@@ -687,3 +687,28 @@ section {
 .contact form .input-box input {
     width: 49%;
 }
+/* -- whatsapp contact -- */
+.contact .whatsapp-btn-container {
+    position: fixed;
+    left: 30px;
+    bottom: 50px;
+    padding: 0.2rem;
+    
+}
+.contact .whatsapp-btn-container .whatsapp-btn {
+    font-size: 4rem;
+    color: #25d366;
+    display: inline-block;
+}
+
+.contact .whatsapp-btn-container a span {
+    position: absolute;
+    top: 0;
+    left: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    transform: rotateZ(20deg) translateX(50px);
+}
+
