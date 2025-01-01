@@ -6,7 +6,7 @@ window.onscroll = () => {
 /* ========== sticky nav =========== */  
 var swiper = new Swiper(".mySwiper2", {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 50,
     loop: true,
     grabCursor: true,
     pagination: {
