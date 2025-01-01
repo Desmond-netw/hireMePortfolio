@@ -743,3 +743,11 @@ section {
 }
 /* -- ===End of whatsapp contact ===-- */
 
+/* ================ Footer ========= */
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 7%;
+    background: var(--main-color);
+}
