@@ -652,3 +652,26 @@ section {
     left: 0;
 }
 
+
+/* ===================== contact css =========== */
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    background-color: #ccc;
+    text-align: center;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background:yellowgreen;
+}
+.contact form .submit-box {
+    
+}
