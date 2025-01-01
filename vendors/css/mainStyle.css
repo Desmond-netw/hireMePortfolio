@@ -660,7 +660,6 @@ section {
 
 .contact form {
     max-width: 70rem;
-    background-color: #ccc;
     text-align: center;
     margin: 1rem auto;
     padding: .5rem;
@@ -670,7 +669,6 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background:yellowgreen;
 }
 .contact form .submit-box {
 
@@ -684,5 +682,8 @@ section {
     background: var(--bg-color);
     border-radius: 0.8rem;
     margin: 0.7rem 0;
-    box-shadow: 0 0.1rem 0.5rem var(--shadow-color);
+    box-shadow: 0 0.3rem 0.5rem var(--shadow-color);
+}
+.contact form .input-box input {
+    width: 49%;
 }
