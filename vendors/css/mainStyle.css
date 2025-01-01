@@ -687,7 +687,14 @@ section {
 .contact form .input-box input {
     width: 49%;
 }
-/* -- whatsapp contact -- */
+.contact form textarea {
+    resize: none;
+}
+.contact form .submit-box {
+    padding: 1rem;
+} 
+
+/* -- ===whatsapp contact ===-- */
 .contact .whatsapp-btn-container {
     position: fixed;
     left: 30px;
@@ -734,4 +741,5 @@ section {
     transform: rotateZ(0deg) translateX(0px);
     opacity: 1.1;
 }
+/* -- ===End of whatsapp contact ===-- */
 
