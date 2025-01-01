@@ -693,22 +693,45 @@ section {
     left: 30px;
     bottom: 50px;
     padding: 0.2rem;
-    
+    width: 10rem;
+    opacity: 0;
+    z-index: 900;
+    animation: fadeup 200ms forwards;
+    animation-delay: 100ms;
+   
+}
+@keyframes fadeup {
+    100% {
+        opacity: 1;
+        bottom: 24px;
+    }
 }
 .contact .whatsapp-btn-container .whatsapp-btn {
-    font-size: 4rem;
+    font-size: 5rem;
     color: #25d366;
     display: inline-block;
+    transition: all 0.5s;
+    margin-top: 1rem;
+    
+}
+.whatsapp-btn-container .whatsapp-btn:hover {
+    transform: scale(1.2);
 }
 
-.contact .whatsapp-btn-container a span {
+.contact .whatsapp-btn-container span {
     position: absolute;
     top: 0;
-    left: 4px;
+    left: 1px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    font-size: 15px;
-    color: #fff;
-    transform: rotateZ(20deg) translateX(50px);
+    font-size: 1.6rem !important;
+    color: var(--text-color);
+    transform: rotateZ(25deg) translateX(30px);
+    opacity: 0;
+    transition: all 400ms;
+}
+.whatsapp-btn-container .whatsapp-btn:hover + span {
+    transform: rotateZ(0deg) translateX(0px);
+    opacity: 1.1;
 }
 

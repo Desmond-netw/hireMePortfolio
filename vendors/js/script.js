@@ -2,7 +2,7 @@
 window.onscroll = () => {
     let header = document.querySelector('.header');
     const whatsappBtnContainer =document.querySelector('.whatsapp-btn-container');
-    const scrollThreshold = 900;
+    const scrollThreshold = 1100;
 
     // initiate the sticky navbar
     header.classList.toggle('sticky', window.scrollY > 100)
