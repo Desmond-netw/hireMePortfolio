@@ -39,6 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
   whatsappBtnContainer.style.display = 'none';
 });
 
+// ============ menu icon & navbar =========
+let menuIcon = document.querySelector('#menu-icon');
+let navBar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('bx-x');
+  navBar.classList.toggle('active');
+}
+
 /* ========== Swiper API Initializer =========== */
 var swiper = new Swiper(".mySwiper2", {
   slidesPerView: 1,

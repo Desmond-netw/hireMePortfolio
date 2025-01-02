@@ -922,6 +922,7 @@ section {
 @media screen and (max-width: 768px)  {
     #menu-icon {
         display: block;
+        cursor: pointer;
     }
 
     #darkMode-icon {
@@ -941,6 +942,7 @@ section {
         background: var(--bg-color);
         border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 0.5rem 1rem var(--shadow-color);
+        display: none;
     }
     .navbar a {
         display: block;
