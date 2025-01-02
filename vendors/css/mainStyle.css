@@ -785,7 +785,17 @@ section {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    padding: 0.8rem;
+    padding: 0.5rem;
+    cursor: pointer;
     background: var(--bg-color);
     border-radius: 50%;
+    border: 0.2rem solid var(--main-color);
+    z-index: 2;
+    box-shadow: 0rem 0.4rem 0.10rem var(--shadow-color);
+
+}
+.footer .footer-iconTop a i {
+    font-size: 3.4rem;
+    color: #333;
+    box-shadow: 0 0.2rem 5rem var(--shadow-color);
 }
