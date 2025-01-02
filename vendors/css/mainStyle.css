@@ -16,9 +16,10 @@
 :root {
     --bg-color:#fdfdfd;
     --text-color: #333;
-    --main-color: #754ef9;
-    --main-color-2: #eef3f2;
+    --main-color: #4b7a72;
+    --bg-light-color: #eef3f2;
     --white-color: #fdfdfd;
+    --btn-color: #2a5450;
     --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -35,9 +36,9 @@ body {
 .about-content .Btn {
     display: inline-block;
     padding: 1rem 1.5rem;
-    background: var(--main-color);
+    background: var(--btn-color);
     color: var(--white-color);
-    border: 0.2rem solid var(--main-color);
+    border: 0.2rem solid var(--btn-color);
     border-radius: 0.6rem;
     font-size: 1.6rem;
     letter-spacing: 0.3rem;
@@ -48,7 +49,7 @@ body {
 .about-content .Btn:hover {
     background: transparent;
     color: var(--main-color);
-    border: 0.2rem solid var(--main-color);
+    border: 0.2rem solid var(--btn-color);
 }
 span {
     color: var(--main-color);
@@ -61,7 +62,7 @@ span {
 .smlBtn {
     display: inline-block;
     padding: 1rem 1.5rem;
-    background: var(--main-color);
+    background: var(--btn-color);
     color: var(--white-color);
     border: 0.2rem solid var(--main-color);
     border-radius: 0.6rem;
@@ -72,8 +73,8 @@ span {
 }
 .smlBtn:hover {
     background: transparent;
-    color: var(--main-color);
-    border: 0.2rem solid var(--main-color);
+    color: var(--btn-color);
+    border: 0.2rem solid var(--btn-color);
 }
 /* ------------  header ------------------ */
 .header {
@@ -984,7 +985,49 @@ section {
     .home .home-content .social-Media  a{
         margin: 2.5rem 0.75rem 3rem;
     }
-
+    /* professional wheel */
+    .home .professional-container  {
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .home .professional-container .profession-box {
+        position: fixed;
+        top: 60%;
+        left: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+    .professional-container .profession-box .profession {
+        padding: 0 13px;
+        left: 0;
+        transform-origin: 0;
+    }
+    .professional-container .profession-box .profession:nth-child(1) {
+        transform: rotate(-90deg) translate(0, -300px);
+    }
+    .professional-container .profession-box .profession:nth-child(1) i {
+        margin-right: 0;
+    }
+    .professional-container .profession-box .profession:nth-child(2) {
+        transform: rotate(0deg) translate(300px, 0);
+    }
+    .professional-container .profession-box .profession:nth-child(3) {
+        transform: rotate(90deg) translate(0, 300px);
+    }
+    .professional-container .profession-box .profession:nth-child(4) {
+        transform: rotate(180deg) translate(-300px, 0);
+    }
+    .professional-container .profession-box .profession:nth-child(5) {
+        transform: rotate(270deg) translate(0, -300px);
+    }
+    .home .profession-box .circle {
+        position: fixed;
+        width: 670px;
+        height: 670px;
+        z-index: -1;
+    }
+/* professional whell overlay */
     .home .professional-container .overlay {
         position: fixed;
         top: 70rem;
