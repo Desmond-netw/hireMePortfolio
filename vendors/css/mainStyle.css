@@ -928,7 +928,7 @@ section {
     #darkMode-icon {
         position: absolute;
         right: 10rem;
-        font-size: 1.6rem;
+        font-size: 1.7rem;
         color: var(--text-color);
         margin-bottom: 0.1rem;
     }
@@ -943,6 +943,9 @@ section {
         border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 0.5rem 1rem var(--shadow-color);
         display: none;
+    }
+    .navbar.active {
+        display: block;
     }
     .navbar a {
         display: block;
