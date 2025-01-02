@@ -924,14 +924,42 @@ section {
         display: block;
     }
 
-    .navbar {
-        top: 100%;
-        left: 0;
+    #darkMode-icon {
+        position: absolute;
+        right: 10rem;
+        font-size: 1.6rem;
+        color: var(--text-color);
+        margin-bottom: 0.1rem;
     }
 
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.5rem 1rem var(--shadow-color);
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0 ;
+        color: var(--text-color);
+    }
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2),
+    .navbar a:nth-child(3),
+    .navbar a:nth-child(4){
+        color: var(--text-color);
+        opacity: 1;
+    }
 
-    .footer {
-        padding: 2rem 3%;
-        justify-content: space-evenly;
+    .navbar a.active {
+        color: var(--main-color);
+    }
+    .navbar a::before {
+        display: none;
     }
 }
