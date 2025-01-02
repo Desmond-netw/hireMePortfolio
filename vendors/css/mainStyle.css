@@ -705,14 +705,20 @@ section {
     z-index: 900;
 }
 
-
+.contact .whatsapp-btn-container .whatsapp-box {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: pulse 3s infinite;
+}
 .contact .whatsapp-btn-container .whatsapp-btn {
     font-size: 5rem;
     color: #25d366;
-    display: inline-block;
     transition: all 0.5s;
-    margin-top: 1rem;
-
+    border-radius: 50%;
     
 }
 @keyframes moves {
@@ -723,11 +729,11 @@ section {
 }
 .whatsapp-btn-container .whatsapp-btn:hover {
     transform: scale(1.2);
+    
 }
-
 .contact .whatsapp-btn-container span {
     position: absolute;
-    top: 0;
+    top: -2rem;
     left: 1px;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -737,11 +743,13 @@ section {
     opacity: 0;
     transition: all 400ms;
 }
-.whatsapp-btn-container .whatsapp-btn:hover + span {
+.whatsapp-btn-container .whatsapp-box:hover + span {
     transform: rotateZ(0deg) translateX(0px);
     opacity: 1.1;
 }
-
+.whatsapp-btn-container .whatsapp-box:hover {
+    animation: none;
+}
 /* -- ===End of whatsapp contact ===-- */
 
 /* ================ Footer ========= */
@@ -791,15 +799,14 @@ section {
     border-radius: 50%;
     border: 0.2rem solid var(--main-color);
     z-index: 2;
-    box-shadow: 0rem 0.4rem 0.10rem var(--shadow-color);
-
+    animation: pulse 3s infinite;
 }
 .footer .footer-iconTop a i {
     font-size: 3.4rem;
     color: #333;
-    box-shadow: 0 0.2rem 5rem var(--shadow-color);
+    
 }
-/* keyframes for topMove */
+/* keyframes for topMove  and Whatsapp icons*/
 @keyframes pulse {
 	0% {
 		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
@@ -811,3 +818,6 @@ section {
 		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
 	}
 }
+
+
+#25d366;
