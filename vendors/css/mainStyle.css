@@ -865,13 +865,35 @@ section {
     }
 }
 
-@media  screen and (max-width: 1024) {
+@media screen and (max-width: 1024) {
     .header {
         padding: 2rem 3%;
     }
     section {
         padding: 10rem 3% 2rem;
     }
+    .home .professional-container .profession-box {
+        right: -22rem;
+    }
+    .home .professional-container .overlay {
+        right: 15rem;
+    }
 
+}
 
+@media screen and (max-width: 991px) {
+    .home .home-content {
+        max-width: 50rem;
+    }
+
+    .home .professional-container .profession-box {
+        right: -45rem
+    }
+    .home .professional-container .overlay {
+        right: -39.5rem;
+    }
+
+    .home .home-img {
+        display: none;
+    }
 }
