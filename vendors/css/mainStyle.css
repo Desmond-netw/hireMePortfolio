@@ -882,6 +882,14 @@ section {
 }
 
 @media screen and (max-width: 991px) {
+
+    .navbar a:nth-child(1),
+    .navbar a:nth-child(2),
+    .navbar a:nth-child(3),
+    .navbar a:nth-child(4){
+        color: var(--main-color);
+        opacity: 0.7;
+    }
     .home .home-content {
         max-width: 50rem;
     }
@@ -895,5 +903,35 @@ section {
 
     .home .home-img {
         display: none;
+    }
+
+    .services,
+    .portfolio {
+        padding-bottom: 5rem;
+    }
+    .contact {
+        min-height: auto;
+    }
+    .footer {
+        padding: 2rem 3%;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (max-width: 768px)  {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        top: 100%;
+        left: 0;
+    }
+
+
+    .footer {
+        padding: 2rem 3%;
+        justify-content: space-evenly;
     }
 }
