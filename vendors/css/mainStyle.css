@@ -969,4 +969,28 @@ section {
     .navbar a::before {
         display: none;
     }
+
+    .home {
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+    }
+    .home .home-content h3 {
+        font-size: 2.6rem;
+    }
+    .home .home-content h1 {
+        font-size: 5rem;
+    }
+    .home .home-content .social-Media  a{
+        margin: 2.5rem 0.75rem 3rem;
+    }
+
+    .home .professional-container .overlay {
+        position: fixed;
+        top: 70rem;
+        left: 50%;
+        right: 0;
+        transform: rotate(90deg) translate(-50%, 50%) scaleY(3);
+        border-width: 23.9rem;
+    }
 }
