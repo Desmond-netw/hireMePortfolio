@@ -779,7 +779,7 @@ section {
 .footer .footer-iconTop {
     width: 40px;
     height: 40px;
-    background: yellowgreen;
+   
 }
 .footer .footer-iconTop a {
     display: inline-flex;
@@ -798,4 +798,16 @@ section {
     font-size: 3.4rem;
     color: #333;
     box-shadow: 0 0.2rem 5rem var(--shadow-color);
+}
+/* keyframes for topMove */
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+	}
+	70% {
+		box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+	}
+	100% {
+		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+	}
 }
