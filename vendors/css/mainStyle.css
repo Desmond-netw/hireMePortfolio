@@ -1058,8 +1058,16 @@ section {
         margin-bottom: 0;
         line-height: 2.2rem;
     }
+    .about .interest-box .interest-content{
+        justify-content: center;
+    }
     .about .about-img {
         width: 70vw;
         margin-top: -2rem;
+    }
+    .about-content .Btn:hover {
+        background: transparent;
+        color: var(--main-color);
+        border: 0.2rem solid var(--btn-color);
     }
 }
