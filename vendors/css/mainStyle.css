@@ -240,8 +240,6 @@ section {
     right: 0;
     width: 768px;
     height: 768px;
-    /* overflow: hidden; */
-    /* background: yellowgreen; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -848,3 +846,32 @@ section {
 /* ................Breakpoint........................ */
 /* .............Media Screen........................ */
 /* .............................................. */
+
+@media screen and (max-wdith: 1200px) {
+    html {
+        font-size: 55%;
+    }
+
+    .home .professional-container {
+        height: 85.8rem;
+    }
+
+    .home .professional-container .profession-box {
+        right: -12rem;
+        height: 85.8rem;
+    }
+    .home .professional-container .overlay {
+        right: -9rem;
+    }
+}
+
+@media  screen and (max-width: 1024) {
+    .header {
+        padding: 2rem 3%;
+    }
+    section {
+        padding: 10rem 3% 2rem;
+    }
+
+
+}
