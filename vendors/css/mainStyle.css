@@ -139,6 +139,13 @@ span {
     cursor: pointer;
 
 }
+
+/* Menu icon */
+#menu-icon {
+    font-size: 3rem;
+    color: var(--text-color);
+    display: none;
+}
 /* =================== home section === */
 /* >>>>>>>>>>>> Global Section property >>>>>>>>>>>> */
 section {
@@ -670,9 +677,6 @@ section {
     align-items: center;
     flex-wrap: wrap;
 }
-.contact form .submit-box {
-
-}
 .contact form .input-box input, 
 .contact form textarea {
     font-size: 1.6rem;
@@ -837,3 +841,10 @@ section {
 		box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
 	}
 }
+
+
+
+/* .............................................. */
+/* ................Breakpoint........................ */
+/* .............Media Screen........................ */
+/* .............................................. */
