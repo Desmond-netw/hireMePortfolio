@@ -1,3 +1,14 @@
+// ============ menu icon & navbar =========
+let menuIcon = document.querySelector('#menu-icon');
+let navBar = document.querySelector('.navbar');
+//  toggle the menu and navbar when click
+menuIcon.onclick = () => {
+  menuIcon.classList.toggle('bx-x');
+  navBar.classList.toggle('active');
+}
+
+
+
 /* ========== Scroll Sections Active Links, Sticky Navbar, and WhatsApp Scroll Effect =========== */
 let sections = document.querySelectorAll('section');
 let navlinks = document.querySelectorAll('header nav a');
@@ -8,6 +19,11 @@ window.onscroll = () => {
   // Sticky navbar logic
   let header = document.querySelector('.header');
   header.classList.toggle('sticky', top > 100);
+
+  // remove the menu and navbar when link click
+  menuIcon.classList.remove ('bx-x');
+  navBar.classList.remove('active');
+
 
   // WhatsApp button visibility
   const whatsappBtnContainer = document.querySelector('.whatsapp-btn-container');
@@ -20,7 +36,7 @@ window.onscroll = () => {
 
   // Scroll sections active link logic
   sections.forEach(sec => {
-    let offset = sec.offsetTop - 150; // Adjust for header height if needed
+    let offset = sec.offsetTop - 150; 
     let height = sec.offsetHeight;
     let id = sec.getAttribute('id');
 
@@ -39,14 +55,6 @@ document.addEventListener('DOMContentLoaded', () => {
   whatsappBtnContainer.style.display = 'none';
 });
 
-// ============ menu icon & navbar =========
-let menuIcon = document.querySelector('#menu-icon');
-let navBar = document.querySelector('.navbar');
-
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle('bx-x');
-  navBar.classList.toggle('active');
-}
 
 /* ========== Swiper API Initializer =========== */
 var swiper = new Swiper(".mySwiper2", {
