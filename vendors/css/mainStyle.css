@@ -348,7 +348,7 @@ section {
 /* about content */
 .about .about-content{
     right:0;
-    width: 768px;
+    width: 100%;
 }
 
 .about-content  h3 {
@@ -1046,6 +1046,11 @@ section {
         padding: 5rem 3% 7rem;
 
     }
+    .about .about-content {
+        text-align: center;
+        justify-content: center;
+        word-wrap: break-word;
+    }
     .about .about-content h2 {
         text-align: center;
         font-size: 3rem;
@@ -1059,6 +1064,7 @@ section {
         font-size: 1.5rem;
         margin-bottom: 0;
         line-height: 2.2rem;
+        word-wrap: break-word;
     }
     .about .interest-box .interest-content{
         justify-content: center;
@@ -1159,6 +1165,8 @@ section {
     .contact .whatsapp-btn-container span {
         opacity: 1;
         transform: rotateZ(0deg) translateX(10px);
+        font-size: 0.6rem;
+        font-weight: 100;
     }
     /* footer */
     .footer {
@@ -1171,3 +1179,159 @@ section {
         
     }
 }
+
+@media screen and (max-width: 600px) {
+    #darkMode-icon {
+        
+    }
+    #menu-icon {
+       
+    }
+    
+    html {
+        font-size: 48%;
+    }
+
+    .navbar a {
+        font-size: 1.8rem;
+        margin: 2.5rem 0;
+    }
+
+    .home .home-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.4rem;
+    }
+
+    .home .professional-container .profession-box .profession {
+        padding: 0 10px;
+    }
+    /* about */
+    .about {
+        padding: 0;
+        background: yellow;
+    }
+     .about-content {
+        padding: 1rem;
+        height: auto;
+    }
+    .about .about-content h2 {
+        font-size: 2.8rem;
+    }
+
+    .about .about-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .about .about-content p {
+        font-size: 1.4rem;
+        line-height: 2rem;
+        word-wrap: break-word;
+        overflow-wrap: break-word; /* Ensures text breaks properly */
+        white-space: normal; 
+    }
+
+    .services h2,
+    .portfolio h2 {
+        font-size: 2.8rem;
+    }
+
+    .services .service-container .service-box h3 {
+        font-size: 1.8rem;
+    }
+
+    .services .service-container .service-box i {
+        font-size: 3.5rem;
+    }
+
+    .portfolio-container .swiper {
+        height: 250px;
+    }
+
+    .testimonial-wrapper .testimonial-slide h3 {
+        font-size: 1.5rem;
+    }
+/* contact */
+    .contact .whatsapp-btn-container {
+        margin-bottom: 25rem;
+    }
+    .contact h2 {
+        font-size: 2.8rem;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 45%;
+    }
+     #darkMode-icon {
+        right: 20rem;
+    }
+    #menu-icon {
+        position: absolute;
+        right: 15rem;
+    } 
+    .header {
+        width: 100%;
+    }
+    .home .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home .home-content h3 {
+        font-size: 2.2rem;
+    }
+/* about */
+    .about {
+        padding: 0 2%;
+        margin: 0;
+
+    }
+    .about .about-content p {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    .services .service-container .service-box h3 {
+        font-size: 1.6rem;
+    }
+
+    .services .service-container .service-box i {
+        font-size: 3rem;
+    }
+
+    .portfolio-container .swiper {
+        height: 200px;
+    }
+/* contact */
+    .contact .whatsapp-btn-container {
+        margin-bottom: 25rem;
+    }
+    .footer {
+        display: grid;
+        width: 100%;
+        grid-template-columns:repeat(1,1fr);
+        gap: 10px;
+        text-align: center;
+        justify-content: space-between;
+        
+    }
+    .footer .footer-links {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: end;
+        padding: 0 4%;
+        text-align: left;
+    }
+    .footer .footer-iconTop {
+      
+    }
+}
+
