@@ -1118,4 +1118,52 @@ section {
         width: 100%;
         transition: 0.3s ease;
     }
+    /* testimonial */
+    .testimonial-container h2 {
+        font-size: 3rem;
+    }
+    .testimonial-container .testimonial-wrapper {
+        padding: 5rem 0px;
+
+    }
+    .testimonial-wrapper .testimonial-slide {
+        padding: 3rem  2rem;
+
+    }
+    .testimonial-wrapper .testimonial-slide  h3{
+        font-size: 1.6rem;
+        margin: 0.1rem;
+        word-wrap: break-word;
+        
+    }
+    .testimonial-wrapper .testimonial-slide  p{
+        word-wrap: break-word;
+        
+    }
+    .testimonial-wrapper  .swiper-button-next,
+    .testimonial-wrapper  .swiper-button-prev {
+        display: none;
+    }
+    /* contact me */
+    .contact  {
+        align-items: center;
+        justify-content: center;
+    }
+    .contact h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .contact .whatsapp-btn-container {
+        margin-bottom: 10rem;
+    }
+    /* footer */
+    .footer {
+        display: grid;
+        width: 100%;
+        grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px;
+        text-align: center;
+        justify-content: space-between;
+        
+    }
 }
