@@ -1156,6 +1156,10 @@ section {
     .contact .whatsapp-btn-container {
         margin-bottom: 10rem;
     }
+    .contact .whatsapp-btn-container span {
+        opacity: 1;
+        transform: rotateZ(0deg) translateX(10px);
+    }
     /* footer */
     .footer {
         display: grid;
