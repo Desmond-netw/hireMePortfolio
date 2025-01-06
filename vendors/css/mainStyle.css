@@ -1294,6 +1294,9 @@ section {
         margin: 0;
 
     }
+    .about .about-img {
+        width: 90vw;
+    }
     .about .about-content p {
         font-size: 1.6rem;
         line-height: 1.8rem;
@@ -1314,6 +1317,9 @@ section {
     .contact .whatsapp-btn-container {
         margin-bottom: 25rem;
     }
+    .contact form .input-box input {
+        width: 100%;
+    }
     .footer {
         display: grid;
         width: 100%;
@@ -1332,6 +1338,13 @@ section {
     }
     .footer .footer-iconTop {
       
+    }
+}
+
+/* media 356 */
+@media screen and (max-width: 365px) {
+    .about .about-img {
+        width: 90vw;
     }
 }
 
