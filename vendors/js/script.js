@@ -81,3 +81,33 @@ var swiper = new Swiper(".mySwiper", {
   },
   mousewheel: true,
 });
+
+
+
+ // Select the iframe element
+ const youtubeVideo = document.getElementById("youtube-video");
+
+ // Add hover event listeners
+ youtubeVideo.addEventListener("mouseenter", () => {
+     // Send play command to the YouTube player
+     youtubeVideo.contentWindow.postMessage(
+         JSON.stringify({
+             event: "command",
+             func: "playVideo",
+             args: []
+         }),
+         "*"
+     );
+ });
+
+ youtubeVideo.addEventListener("mouseleave", () => {
+     // Send pause command to the YouTube player
+     youtubeVideo.contentWindow.postMessage(
+         JSON.stringify({
+             event: "command",
+             func: "pauseVideo",
+             args: []
+         }),
+         "*"
+     );
+ });
