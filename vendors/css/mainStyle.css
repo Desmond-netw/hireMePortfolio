@@ -1181,12 +1181,7 @@ section {
 }
 
 @media screen and (max-width: 600px) {
-    #darkMode-icon {
-        
-    }
-    #menu-icon {
-       
-    }
+   
     
     html {
         font-size: 48%;
