@@ -1181,12 +1181,6 @@ section {
 }
 
 @media screen and (max-width: 600px) {
-    #darkMode-icon {
-        
-    }
-    #menu-icon {
-       
-    }
     
     html {
         font-size: 48%;
@@ -1226,7 +1220,7 @@ section {
     }
 
     .about .about-content p {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         line-height: 2rem;
         word-wrap: break-word;
         overflow-wrap: break-word; /* Ensures text breaks properly */
@@ -1288,6 +1282,11 @@ section {
     .home .home-content h3 {
         font-size: 2.2rem;
     }
+    .home .home-content .social-Media {
+        position: relative;
+        z-index: 10;
+    }
+    
 /* about */
     .about {
         padding: 0 2%;
