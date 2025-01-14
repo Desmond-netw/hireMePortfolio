@@ -103,11 +103,14 @@ span {
 }
 .navbar a {
     position: relative;
+    display: inline-block;
     font-size: 1.7rem;
     font-weight: 500;
     margin-right: 3.5rem;
     color: var(--white-color);
     font-weight: 600;
+    animation: slideleft 1s ease forwards;
+    animation-delay: calc(0.01s * var(--i));
 }
 .navbar a.active::before {
     content: '';
@@ -246,6 +249,39 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: slideleft 1s ease forwards, professionalRotate 1s ease-out infinite;
+    animation: 0.1s, 0.5s;
+}
+/* keyframe */
+@keyframes slideleft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes professionalRotate {
+    0%,20% {
+        transform: rotate(0deg);
+    }
+    25%,45% {
+        transform: rotate(-90deg);
+    }
+    50%,65% {
+        transform: rotate(-180deg);
+    }
+    60%,70% {
+        transform: rotate(-270deg);
+    }
+    75%,80% {
+        transform: rotate(-240deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 .home .profession-box .profession {
     position: absolute;
@@ -318,15 +354,16 @@ section {
     position: absolute;
     bottom: 0;
     right: 0;
-    top: 20%;
+    top: 2%;
     width: 100%;
     pointer-events: none;
     display: flex;
     justify-content: end;
     pointer-events: none;
+    animation: slideleft 1s ease forwards; 
 }
 .home .home-img img {
-    height: 600px;
+    height: 700px;
     pointer-events: none;
 }
 
