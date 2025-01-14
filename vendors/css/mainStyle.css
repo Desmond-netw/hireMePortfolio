@@ -169,7 +169,7 @@ section {
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 0.8;
-    animation: slideright 1s ease forwards;
+    
 }
 .home-content h1 {
     font-size: 5.0rem;
@@ -187,6 +187,12 @@ section {
 }
 .home-content p span {
     font-style: normal;
+}
+.home-content h3,
+.home-content p,
+.home-content h1 {
+    animation: slideright 1s ease forwards;
+    animation-delay: 0.2s;
 }
 
 /* ============  social media css =====*/
