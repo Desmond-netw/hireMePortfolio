@@ -169,6 +169,7 @@ section {
     font-size: 3.2rem;
     font-weight: 600;
     line-height: 0.8;
+    animation: slideright 1s ease forwards;
 }
 .home-content h1 {
     font-size: 5.0rem;
@@ -202,6 +203,7 @@ section {
     color: var(--main-color);
     margin: 2.5rem 1.5rem 3rem 0;
     transition: 0.3s ease;
+    animation: slideleft 1s ease;
 }
 .home-content .social-Media a:hover {
    background: var(--main-color);
@@ -221,6 +223,7 @@ section {
     font-weight: 600;
     box-shadow: 0 .2rem .5rem var(--shadow-color);
     transition: 0.3s ease-in-out;
+    animation: slidetop 1s ease forwards;
 }
 .home-content .cvBtn:hover {
     background: transparent;
@@ -249,10 +252,10 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: slideleft 1s ease forwards, professionalRotate 1s ease-out infinite;
-    animation: 0.1s, 0.5s;
+    animation: slideleft 1s ease forwards, professionalRotate 13s ease-out infinite;
+    animation-delay: 0s  ,1.5s;
 }
-/* keyframe */
+/* # ################################# keyframe */
 @keyframes slideleft {
     0% {
         opacity: 0;
@@ -263,25 +266,43 @@ section {
         transform: translateX(0);
     }
 }
+@keyframes slidetop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
+@keyframes slideright {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0);
+    }
+}
 @keyframes professionalRotate {
     0%,20% {
         transform: rotate(0deg);
     }
     25%,45% {
-        transform: rotate(-90deg);
+        transform: rotate(-144deg);
     }
-    50%,65% {
-        transform: rotate(-180deg);
+    50%,70% {
+        transform: rotate(-216deg);
     }
-    60%,70% {
-        transform: rotate(-270deg);
-    }
-    75%,80% {
-        transform: rotate(-240deg);
+    75%,90% {
+        transform: rotate(-288deg);
     }
     100% {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
     }
+    
 }
 .home .profession-box .profession {
     position: absolute;
