@@ -1344,7 +1344,9 @@ section {
         position: relative;
         z-index: 10;
     }
-    
+    .home .profession-box .profession {
+        display: none;
+    }
 /* about */
     .about {
         padding: 0 2%;
