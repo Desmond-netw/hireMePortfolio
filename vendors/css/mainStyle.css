@@ -381,7 +381,7 @@ section {
     position: absolute;
     bottom: 0;
     right: 0;
-    top: 2%;
+    top: 0%;
     width: 100%;
     pointer-events: none;
     display: flex;
