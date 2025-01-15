@@ -413,6 +413,7 @@ section {
 .about .about-content{
     right:0;
     width: 100%;
+    text-align: center;
 }
 
 .about-content  h3 {
