@@ -580,18 +580,25 @@ section {
     margin-bottom: 2rem;
 
 }
+.portfolio .portfolio-wraper {
+    position: relative;
+    width: 100%;
+    max-width: 90rem;
+}
 
 .portfolio .portfolio-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 2.4rem;
+    padding: 5rem 1rem;
 }
-/* ============== */
+/* ==================================== */
 /* -------portfolio swiper-------- */
 .portfolio-container .swiper {
     width: 100%;
-    height: 500px
+    height: 100%;
+    margin-right: auto;
   }
   .portfolio-container .swiper .swiper-slide {
     font-size: 18px;
@@ -599,6 +606,12 @@ section {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+     
   }
 /* --------swiper end */
 /* ============================== */
