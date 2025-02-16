@@ -587,7 +587,6 @@ section {
 }
 
 .portfolio .portfolio-container {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1364,8 +1363,15 @@ section {
         position: relative;
         z-index: 10;
     }
-    .home .profession-box .profession {
+    /* professional box */
+    .home .professional-container .profession-box {
         display: none;
+        animation: none;
+    }
+    .home .professional-container .profession-box .profession {
+        display: none;
+        animation: none;
+
     }
 /* about */
     .about {
