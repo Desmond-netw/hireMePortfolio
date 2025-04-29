@@ -573,7 +573,7 @@ section {
 /* ============= Portfolio =============== */
 
 .portfolio {
-    min-height: auto;
+    min-height: 100vh;
     padding-bottom: 10rem ;
 }
 .portfolio h2 {
