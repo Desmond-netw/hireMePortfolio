@@ -622,8 +622,9 @@ section {
     position: relative;
     display: flex;
     /* border: 1px solid #044274; */
+    flex-direction: column;
     border-radius: 2rem;
-    box-shadow: 0 0 1 rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     overflow: hidden;
     margin-bottom: 2rem;
 }
@@ -644,6 +645,14 @@ section {
     opacity: 0;
     transition: 0.3s ease;
 }
+.portfolio-box .portfolio-box iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+    max-width: 100%;
+}
+
 .portfolio-container .portfolio-box .portfolio-layer h4 {
     font-size: 3rem;
     font-weight: 600 ;
