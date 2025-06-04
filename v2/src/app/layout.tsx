@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Roboto, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+// MUI ICONS
+import AppsIcon from '@mui/icons-material/Apps';
+import Link from "next/link";
+
 const roboto = Roboto({
   weight: ["100","300","400","500","700"],
   subsets: ["latin"],
@@ -30,7 +34,7 @@ export default function RootLayout({
         {/* default setup */}
         {/* ------- left-side-mini-menu--- */}
         <div className="w-13 bg-slate-600 h-[100vh] fixed px-1 py-20">
-          
+          <Link href={"/"}><AppsIcon/></Link>
         </div>
 
         {/* ---MAIN BODY--------- */}
