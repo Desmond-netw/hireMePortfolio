@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Roboto, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const roboto = Roboto({
+  weight: ["100","300","400","500","700"],
   subsets: ["latin"],
 });
 
@@ -25,9 +25,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${roboto.className} flex flex-row gap-2 antialiased`}
       >
-        {children}
+        {/* default setup */}
+        {/* ------- left-side-mini-menu--- */}
+        <div className="w-13 bg-slate-600 h-[100vh] fixed px-1 py-20">
+          
+        </div>
+
+        {/* ---MAIN BODY--------- */}
+        <div className="px-1">
+           {children}
+        </div>
       </body>
     </html>
   );
