@@ -24,8 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${roboto.className} ${geistMono.variable}`}>
+    <html lang="en" className="Dark">
+      <body className={`${roboto.className} ${geistMono.variable} bg-white dark:bg-black` }>
         <ClientLayout>{children}</ClientLayout>
       </body>
     </html>

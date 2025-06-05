@@ -41,7 +41,7 @@ const FullScreenDialog: React.FC<FullScreenDialogProps> = ({  title, children, o
           transition: Transition,
         }}
     >
-       <AppBar position="static">
+       <AppBar position="static" >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <IconButton
