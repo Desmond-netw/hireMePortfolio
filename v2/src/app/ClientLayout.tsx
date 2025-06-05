@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import AppsIcon from "@mui/icons-material/Apps";
 import SideDrawer from "./components/drawer";
+import Container from "./components/container";
 // import Link from "next/link";
 
 export default function ClientLayout({
@@ -18,9 +19,10 @@ export default function ClientLayout({
 
   return (
     <div className="flex">
-      {/* Fixed Sidebar */}
+      <Container>
+      {/* Fixed smaill-side-bar-menu */}
       <aside className="w-10 xs:w-6 h-screen fixed top-0 left-0 bg-slate-600 flex flex-col items-center py-15 z-50">
-        <button onClick={() => toggleDrawer(true)}>
+        <button onClick={() => toggleDrawer(true)} className="md:hidden flex">
           <AppsIcon className="text-white" />
         </button>
       </aside>
@@ -32,6 +34,7 @@ export default function ClientLayout({
 
       {/* Side Drawer */}
       <SideDrawer open={drawerOpen} toggleDrawer={toggleDrawer} />
+       </Container>
     </div>
   );
 }
