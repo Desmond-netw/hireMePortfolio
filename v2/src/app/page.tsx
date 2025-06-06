@@ -1,5 +1,6 @@
 
 import DrawerList from "./components/DrawerList";
+import Aboutme from "./components/aboutMe/Aboutme";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       {/* ---Main content area with left margin to avoid overlap with fixed sidebar */}
       <main className="w-[75%] ml-0 md:ml-[200px] lg:ml-[200px]">
        {/* -----   Other Components Here ------------- */}
-       contents con Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet nam, eveniet quibusdam nobis, porro alias error repellendus obcaecati, esse quisquam similique! Eius, tenetur? Vitae veniam sequi natus, rem voluptatum vero.
+        <Aboutme/>
       </main>
     </div>
   );
