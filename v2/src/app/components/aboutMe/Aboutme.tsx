@@ -6,18 +6,19 @@ import { faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
 import { faGift } from "@fortawesome/free-solid-svg-icons";
 import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import { faAward } from "@fortawesome/free-solid-svg-icons";
-import bgImage from '@/../../public/bg-1.jpg'
+
 
 // backgrounds img
 
 const Aboutme = () => {
     return ( <>
         {/* ---- Main about section --- - */}
-        <div className={`section w-screen h-screen  bg-center bg-fixed bg-cover `}
-         style={{ backgroundImage: "url('/bg-1.jpg')" }}
-         >
 
+        <div className={`section w-screen h-screen  bg-center bg-fixed bg-cover `}
+         style={{ backgroundImage: "url('/bg-big.jpg')" }}
+         >
         </div>
+        <div className=" h-screen w-screen absolute inset-0 bg-gradient-to-l from-black/70 to-transparent" />
         <div className="wrapper">
           {/* == some personal discriptions */}
           <div className="title">About Me and My jorney
