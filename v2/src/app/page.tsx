@@ -11,7 +11,7 @@ export default function Home() {
       </aside>
 
       {/* ---Main content area with left margin to avoid overlap with fixed sidebar */}
-      <main className="w-[75%] ml-0 md:ml-[200px] lg:ml-[200px]">
+      <main className="w-[75%] ml-0 md:ml-[150px] lg:ml-[150px]">
        {/* -----   Other Components Here ------------- */}
         <Aboutme/>
       </main>
