@@ -1,3 +1,12 @@
+import React from "react";
+// font awearsome 
+// Font Awesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClockRotateLeft } from "@fortawesome/free-solid-svg-icons";
+import { faGift } from "@fortawesome/free-solid-svg-icons";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import { faAward } from "@fortawesome/free-solid-svg-icons";
+
 const Aboutme = () => {
     return ( <>
         {/* ---- Main about section --- - */}
@@ -11,6 +20,30 @@ const Aboutme = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta repellendus illo iste eius molestiae natus, esse incidunt. Minus architecto dicta, provident libero. Ipsum culpa, atque ab. Aut incidunt amet optio quo nemo atque eligendi aperiam quisquam aliquid, distinctio mollitia minima, eius repellendus asperiores vero reprehenderit dolore, consequuntur adipisci tenetur! Enim sed, tempora obcaecati perspiciatis illo ducimus maiores aut quae eos, aspernatur sunt unde, quam a praesentium tenetur est quas eveniet dolorum quibusdam hic placeat! Distinctio nostrum assumenda suscipit cupiditate rem amet repudiandae labore neque quis quia dicta, aliquid eum nemo sint, maxime sunt. Cumque suscipit nulla quis velit iure. Consequuntur, ipsa! Veniam error enim itaque ab unde, accusamus asperiores, ratione, debitis similique suscipit aut, qui consectetur quos repudiandae illo impedit.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, sunt ipsum modi. Consectetur nobis vero minus, architecto facere velit explicabo molestiae delectus omnis ad expedita similique inventore placeat incidunt. Sint quasi autem quam illo omnis soluta minus, in quibusdam placeat. Saepe ea magni ducimus, modi, eos quis, at possimus earum ad magnam natus, nihil vero error. Ab ipsum omnis odit ipsam, maxime aspernatur molestiae sit tempore corporis non rerum earum neque voluptatibus provident dolor quod molestias officia. Aspernatur quis magni iste cum quas fugit modi aut ratione repudiandae quaerat eaque blanditiis veritatis quibusdam, reprehenderit eveniet, earum, atque sequi, sunt fugiat?</p>
           </div>
+        </div>
+        <div className="counter-up">
+            <div className="content">
+                <div className="box">
+                    <div className="icon"><FontAwesomeIcon icon={faClockRotateLeft} /></div>
+                    <div className="counter">87</div>
+                    <div className="text">Working Hours</div>
+                </div>
+                <div className="box">
+                    <div className="icon"> <FontAwesomeIcon icon={faGift}/></div>
+                    <div className="counter">20</div>
+                    <div className="text">Project Completed</div>
+                </div>
+                <div className="box">
+                    <div className="icon"> <FontAwesomeIcon icon={faUsers}/></div>
+                    <div className="counter">12</div>
+                    <div className="text">Happy Clients</div>
+                </div>
+                <div className="box">
+                    <div className="icon"> <FontAwesomeIcon icon={faAward}/></div>
+                    <div className="counter">6+</div>
+                    <div className="text">Years of Experience</div>
+                </div>
+            </div>
         </div>
     </> );
 }
