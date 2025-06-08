@@ -11,47 +11,44 @@ import { faAward } from "@fortawesome/free-solid-svg-icons";
 // backgrounds img
 
 const Aboutme = () => {
-    return ( <>
-        {/* ---- Main about section --- - */}
-
-        <div className={`section w-screen h-screen bg-center bg-fixed bg-cover bg-no-repeat `}
-         style={{ backgroundImage: "url('/bg-big.jpg')" }} // ACOUT SECTION BG-IMAGE
-         >
-        </div>
-        <div className=" absolute inset-0 bg-gradient-to-l from-black/80 to-transparent" />
-        <div className="wrapper py-5 px-10">
-          {/* == some personal discriptions */}
-          <div className="title">
-            {/* - What I do */}
-             <h1 className="text-lg md:text-4xl pl-10 font-bold border-l-4 border-violet-600">What I Do</h1>
-            <p className="py-2  md:py-4 px-8 text-justify">I specialize in backend development with a focus on building scalable and efficient web applications and APIs. With expertise in various backend technologies, I help create robust solutions for businesses. I build APIs that are secure, fast, and easy to use, ensuring smooth interactions between systems. Below is a quick overview of the main technical skills and technologies I use. Want to find out more about my experience? Check out my</p>
-          </div>
-        </div>
-        <div className="counter-up">
-            <div className="content">
-                <div className="box">
-                    <div className="icon"><FontAwesomeIcon icon={faClockRotateLeft} /></div>
-                    <div className="counter">87</div>
-                    <div className="text">Working Hours</div>
-                </div>
-                <div className="box">
-                    <div className="icon"> <FontAwesomeIcon icon={faGift}/></div>
-                    <div className="counter">20</div>
-                    <div className="text">Project Completed</div>
-                </div>
-                <div className="box">
-                    <div className="icon"> <FontAwesomeIcon icon={faUsers}/></div>
-                    <div className="counter">12</div>
-                    <div className="text">Happy Clients</div>
-                </div>
-                <div className="box">
-                    <div className="icon"> <FontAwesomeIcon icon={faAward}/></div>
-                    <div className="counter">6+</div>
-                    <div className="text">Years of Experience</div>
+    return ( <div className="w-75% bg-amber-600"> {/* ---- Main about section --- - */}
+        
+            <div className={`section relative w-full h-screen bg-[url(/bg-big.jpg)] bg-center bg-fixed bg-cover bg-no-repeat `}></div>
+            {/* <div className="absolute inset-0 bg-gradient-to-l from-black/80 to-transparent z-10" /> */}
+        
+        
+                <div className="wrapper  z-25 px-6 py-10 md:px-20 md:py-24 max-w-4xl">
+            {/* == some personal discriptions */}
+            <h1 className="text-2xl md:text-4xl font-bold border-l-4 border-violet-600 pl-4 mb-4">
+                What I Do
+            </h1>
+                <p className="text-justify leading-relaxed">
+                    I specialize in backend development with a focus on building scalable and efficient web applications and APIs. With expertise in various backend technologies, I help create robust solutions for businesses. I build APIs that are secure, fast, and easy to use, ensuring smooth interactions between systems. Below is a quick overview of the main technical skills and technologies I use.
+                </p>
+            </div>
+            <div className="counter-up w-screen h-[50vh] px-4 py-4 flex justify-center items-center bg-[url(/bg-2.jpeg)]  bg-center bg-cover bg-fixed bg-no-repeat relative"
+                    >
+                <div className="content w-full h-full flex justify-between flex-col md:flex-row bg-red-100">
+                    {[
+                        {icon: faClockRotateLeft, value: "87", label: "Working Hours"},
+                        { icon: faGift, value: "20", label: "Project Completed" },
+                        { icon: faUsers, value: "12", label: "Happy Clients" },
+                        { icon: faAward, value: "6+", label: "Years of Experience" },
+                    ].map((item, idx) => (
+                        // box to handle content
+                        <div key={idx}
+                        className="w-36 h-36 md:w-40 md:h-40 border-1 border-dashed border-[rgba(255,255,255,0.6)] rounded-lg flex flex-col items-center justify-center text-white bg-black/30 backdrop-blur-sm"
+                        >
+                            <FontAwesomeIcon icon={item.icon} className="text-[#e6e6e6] text-[48px] mb-2" />
+                            <div className="text-2xl font-bold">{item.value}</div>
+                            <div className="text-sm text-center">{item.label}</div>
+                        </div>
+                    ))}
                 </div>
             </div>
-        </div>
-    </> );
+       
+        
+    </div> );
 }
  
 export default Aboutme;

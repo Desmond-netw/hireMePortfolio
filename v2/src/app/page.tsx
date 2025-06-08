@@ -1,19 +1,17 @@
-
 import DrawerList from "./components/DrawerList";
 import Aboutme from "./components/aboutMe/Aboutme";
 
 export default function Home() {
   return (
-    <div className="w-full flex ">
-      {/* ---side Menu static on large screen */}
-      <aside className="w-[25%] max-w-[250px] hidden md:flex bg-[#F9F9F8] min-h-screen fixed top-0 left-0 z-10">
+    <div className="w-[80%] flex ">
+      {/* --- Side Menu fixed on large screen --- */}
+      <div className="hidden md:flex fixed top-0 left-0 z-30 bg-[#F9F9F8] w-[250px] min-h-screen">
         <DrawerList />
-      </aside>
+      </div>
 
-      {/* ---Main content area with left margin to avoid overlap with fixed sidebar */}
-      <main className="w-[75%] ml-0 md:ml-[150px] lg:ml-[150px] overflow-x-hidden">
-       {/* -----   Other Components Here ------------- */}
-        <Aboutme/>
+      {/* --- Main content with margin to avoid sidebar overlap --- */}
+      <main className="w-full ml-0 md:ml-[200px]">
+        <Aboutme />
       </main>
     </div>
   );
